@@ -1,0 +1,31 @@
+<div @fadeInUp class="card" fxFlex="auto" style="height: 60%">
+    <div class="px-6 py-4 border-b" fxLayout="row" fxLayoutAlign="start center">
+        <h2 class="title m-0">Панель фильтров</h2>
+    </div>
+
+    <div class="px-6 py-4" fxLayout="column">
+        <mat-form-field fxFlex="none">
+            <mat-label>Область</mat-label>
+            <mat-select>
+                <mat-option value="Apples">Apples</mat-option>
+                <mat-option value="Peaches">Peaches</mat-option>
+                <mat-option value="Bananas">Bananas</mat-option>
+                <mat-option value="Mango">Mango</mat-option>
+                <mat-option value="Apples">Cucumber</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field [color]="selectCtrl.value" fxFlex="none">
+            <mat-label>АМБП</mat-label>
+            <mat-select [formControl]="selectCtrl">
+                <mat-option value="primary">Primary Color</mat-option>
+                <mat-option value="accent">Accent Color</mat-option>
+                <mat-option value="warn">Warn Color</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <div fxLayout="row" fxLayoutAlign="end center" fxLayoutGap="8px">
+            <button mat-button type="button">СРОСИТЬ</button>
+            <button color="primary" mat-raised-button type="button">ПРИМЕНИТЬ</button>
+        </div>
+    </div>
+</div>
