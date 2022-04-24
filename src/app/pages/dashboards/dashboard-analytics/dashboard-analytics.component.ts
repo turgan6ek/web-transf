@@ -18,23 +18,42 @@ export class DashboardAnalyticsComponent implements OnInit {
 
   tableColumns: TableColumn<Order>[] = [
     {
-      label: '',
-      property: 'status',
-      type: 'badge'
+      label: 'Меню',
+      property: 'btn',
+      type: 'button'
     },
     {
-      label: 'PRODUCT',
-      property: 'name',
+      label: 'Статус загрузки форм',
+      property: 'status',
       type: 'text'
     },
     {
-      label: '$ PRICE',
-      property: 'price',
-      type: 'text',
-      cssClasses: ['font-medium']
+      label: 'ЭЦП',
+      property: 'eds',
+      type: 'text'
     },
     {
-      label: 'DATE',
+      label: 'Статус ПРГ',
+      property: 'prg',
+      type: 'text'
+    },
+    {
+      label: 'Уровень',
+      property: 'level',
+      type: 'text'
+    },
+    {
+      label: 'Причина отключение',
+      property: 'disconnect_reason',
+      type: 'text'
+    },
+    {
+      label: 'ПЗ',
+      property: 'note',
+      type: 'text'
+    },
+    {
+      label: 'Дата последнего обновления',
       property: 'timestamp',
       type: 'text',
       cssClasses: ['text-secondary']

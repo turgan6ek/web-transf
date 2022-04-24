@@ -3,6 +3,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import icCloudDownload from '@iconify/icons-ic/twotone-cloud-download';
+import icRoundHorizontalSplit from '@iconify/icons-ic/round-horizontal-split';
 import {TableColumn} from '../../../../../@vex/interfaces/table-column.interface';
 
 @Component({
@@ -23,7 +24,7 @@ export class TableComponent<T> implements OnInit, OnChanges, AfterViewInit {
   @ViewChild(MatSort, { static: true }) sort: MatSort;
 
   icCloudDownload = icCloudDownload;
-
+  icOutlineAlignHorizontalCenter = icRoundHorizontalSplit;
   constructor() { }
 
   ngOnInit() {
