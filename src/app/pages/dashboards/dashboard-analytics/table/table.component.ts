@@ -15,6 +15,7 @@ export class TableComponent<T> implements OnInit, OnChanges, AfterViewInit {
 
   @Input() data: T[];
   @Input() columns: TableColumn<T>[];
+  @Input() subs: TableColumn<T>[];
   @Input() pageSize = 6;
 
   visibleColumns: Array<keyof T | string>;

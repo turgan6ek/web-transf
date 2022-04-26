@@ -16,11 +16,34 @@ import {FormControl} from '@angular/forms';
 })
 export class DashboardAnalyticsComponent implements OnInit {
 
-  tableColumns: TableColumn<Order>[] = [
+  subColumns: TableColumn<Order>[] = [
+    {
+      label: '2022',
+      property: '2022',
+      type: 'text'
+    },
+    {
+      label: '2023',
+      property: '2023',
+      type: 'text'
+    },
+    {
+      label: '2024',
+      property: '2024',
+      type: 'text'
+    },
+  ];
+
+    tableColumns: TableColumn<Order>[] = [
     {
       label: 'Меню',
       property: 'btn',
       type: 'button'
+    },
+    {
+      label: 'Сумма по программе',
+      property: 'programSum',
+      type: 'text'
     },
     {
       label: 'Статус загрузки форм',
